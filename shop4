@@ -1,9 +1,8 @@
     public static void main(String[] args) {
         // TODO code application logic here
-    System.out.println("Hello customer");
-        System.out.println("to enter shop, input: [proceed]");
+
         Scanner input = new Scanner(System.in);
-        String y = input.nextLine();
+        String y = "";
 
         int x0 = 0;
 
@@ -27,172 +26,216 @@
         int n3 = 0;
         int n4 = 0;
         int n5 = 0;
-        while (y.equals("proceed")) {
-            System.out.println("Welcome to the kurshop");
-            System.out.println("input: [ok] to continue");
+        do {
+            
+            
+            System.out.println("input: [enter shop] to continue");
 
             y = input.nextLine();
-            do {
 
-                while (y.equals("ok")) {
+            while (y.equals("enter shop")) {
+                System.out.println("_________________________________");
+                System.out.println("Welcome to the kurshop");
+                System.out.println("We currently have 2 discounts available");
+                System.out.println("if you buy 5 packs of barnuts, you can get a 30 peso discount");
+                System.out.println("and");
+                System.out.println("if you buy 10 packs of kisses, you can get a 20 peso discount");
+                System.out.println("_________________________________");
+                System.out.println("input [1] to proceed");
+
+                xx1 = input.nextInt();
+
+                while (xx1 == 1) {
                     System.out.println("_________________________________");
-                    System.out.println("We currently have 2 discounts available");
-                    System.out.println("if you buy 5 packs of barnuts, you can get a 30 peso discount");
-                    System.out.println("and");
-                    System.out.println("if you buy 10 packs of kisses, you can get a 20 peso discount");
-                    System.out.println("input [yes] to proceed");
+                    System.out.println("[Kuro shop]");
+                    System.out.println("_________________________________");
+                    System.out.println("kisses pack:35");
+                    System.out.println("ID: 001");
+                    System.out.println("_________________________________");
+                    System.out.println("m&m's pack:15");
+                    System.out.println("ID: 002");
+                    System.out.println("_________________________________");
+                    System.out.println("iCool pack: 30");
+                    System.out.println("ID: 003");
+                    System.out.println("_________________________________");
+                    System.out.println("dynamite pack: 20");
+                    System.out.println("ID:004");
+                    System.out.println("_________________________________");
+                    System.out.println("barnuts pack: 50");
+                    System.out.println("ID:005");
+                    System.out.println("_________________________________");
+                    System.out.println("please input the ID of the desired product");
+                    System.out.println("Input: [101] to go to the cashier");
+                    System.out.println("_________________________________");
+                    xx1 = input.nextInt();
 
-                    y = input.nextLine();
+                    switch (xx1) {
+                        case 001:
+                            System.out.println("_________________________________");
+                            System.out.println("please place the amount of kisses you want to buy");
+                            System.out.println("_________________________________");
+                            x1 = input.nextInt();
+                            System.out.println("_________________________________");
+                            int x1p = (x1 * 35);
+                            System.out.println("amount of kisses bought: " + x1);
+                            System.out.println("cost: " + x1p);
+                            System.out.println("input [1] to proceed");
+                            System.out.println("_________________________________");
+                            xx1 = input.nextInt();
+                            break;
 
-                    while (xx1 == 1) {
-                        System.out.println("_________________________________");
-                        System.out.println("[Kuro shop]");
-                        System.out.println("_________________________________");
-                        System.out.println("kisses pack:35");
-                        System.out.println("ID: 001");
-                        System.out.println("_________________________________");
-                        System.out.println("m&m's pack:15");
-                        System.out.println("ID: 002");
-                        System.out.println("_________________________________");
-                        System.out.println("iCool pack: 30");
-                        System.out.println("ID: 003");
-                        System.out.println("_________________________________");
-                        System.out.println("dynamite pack: 20");
-                        System.out.println("ID:004");
-                        System.out.println("_________________________________");
-                        System.out.println("barnuts pack: 50");
-                        System.out.println("ID:005");
-                        System.out.println("_________________________________");
-                        System.out.println("please input the ID of the desired product");
-                        System.out.println("Input: [101] to go to the cashier");
+                        case 002:
+                            System.out.println("_________________________________");
+                            System.out.println("please place the amount of m&m's you want to buy");
+                            System.out.println("_________________________________");
+                            x2 = input.nextInt();
+                            System.out.println("_________________________________");
+                            int x2p = (x2 * 15);
+                            System.out.println("amount of m&m's bought: " + x2);
+                            System.out.println("cost: " + x2p);
+                            System.out.println("input [1] to proceed");
+                            System.out.println("_________________________________");
+                            xx1 = input.nextInt();
+                            break;
+                        case 003:
+                            System.out.println("_________________________________");
+                            System.out.println("please place the amount of iCool you want to buy");
+                            System.out.println("_________________________________");
+                            x3 = input.nextInt();
+                            System.out.println("_________________________________");
+                            int x3p = (x3 * 30);
+                            System.out.println("amount of iCool bought: " + x3);
+                            System.out.println("cost: " + x3p);
+                            System.out.println("input [1] to proceed");
+                            System.out.println("_________________________________");
+                            xx1 = input.nextInt();
+                            break;
+                        case 004:
+                            System.out.println("_________________________________");
+                            System.out.println("please place the amount of dynamite you want to buy");
+                            System.out.println("_________________________________");
+                            x4 = input.nextInt();
+                            System.out.println("_________________________________");
+                            int x4p = (x4 * 20);
+                            System.out.println("amount of dynamite bought: " + x4);
+                            System.out.println("cost: " + x4p);
+                            System.out.println("input [1] to proceed");
+                            System.out.println("_________________________________");
+                            xx1 = input.nextInt();
+                            break;
 
-                        xx1 = input.nextInt();
+                        case 005:
+                            System.out.println("_________________________________");
+                            System.out.println("please place the amount of barnuts you want to buy");
+                            System.out.println("_________________________________");
+                            x5 = input.nextInt();
+                            System.out.println("_________________________________");
+                            int x5p = (x5 * 50);
+                            System.out.println("amount of barnuts bought: " + x5);
+                            System.out.println("cost: " + x5p);
+                            System.out.println("input [1] to proceed");
+                            System.out.println("_________________________________");
+                            xx1 = input.nextInt();
+                            break;
 
-                        switch (xx1) {
-                            case 001:
-                                System.out.println("_________________________________");
-                                System.out.println("please place the amount of kisses you want to buy");
+                        case 101:
+                            x1p = (x1 * 35);
+                            x2p = (x2 * 15);
+                            x3p = (x3 * 30);
+                            x4p = (x4 * 20);
+                            x5p = (x5 * 50);
+                            System.out.println("you are now in the cashier");
+                            System.out.println("_________________________________");
+                            
 
-                                x1 = input.nextInt();
-                                System.out.println("_________________________________");
-                                int x1p = (x1 * 35);
-                                System.out.println("amount of kisses bought: " + x1);
-                                System.out.println("cost: " + x1p);
-                                break;
+                           
 
-                            case 002:
-                                System.out.println("_________________________________");
-                                System.out.println("please place the amount of m&m's you want to buy");
-
-                                x2 = input.nextInt();
-                                System.out.println("_________________________________");
-                                int x2p = (x2 * 15);
-                                System.out.println("amount of m&m's bought: " + x2);
-                                System.out.println("cost: " + x2p);
-                                break;
-                            case 003:
-                                System.out.println("_________________________________");
-                                System.out.println("please place the amount of iCool you want to buy");
-
-                                x3 = input.nextInt();
-                                System.out.println("_________________________________");
-                                int x3p = (x3 * 30);
-                                System.out.println("amount of iCool bought: " + x3);
-                                System.out.println("cost: " + x3p);
-                                break;
-                            case 004:
-                                System.out.println("_________________________________");
-                                System.out.println("please place the amount of dynamite you want to buy");
-
-                                x4 = input.nextInt();
-                                System.out.println("_________________________________");
-                                int x4p = (x4 * 20);
-                                System.out.println("amount of dynamite bought: " + x4);
-                                System.out.println("cost: " + x4p);
-                                break;
-
-                            case 005:
-                                System.out.println("_________________________________");
-                                System.out.println("please place the amount of barnuts you want to buy");
-
-                                x5 = input.nextInt();
-                                System.out.println("_________________________________");
-                                int x5p = (x5 * 50);
-                                System.out.println("amount of barnuts bought: " + x5);
-                                System.out.println("cost: " + x5p);
-                                break;
-
-                            case 101:
-                                x1p = (x1 * 35);
-                                x2p = (x2 * 15);
-                                x3p = (x3 * 30);
-                                x4p = (x4 * 20);
-                                x5p = (x5 * 50);
-                                System.out.println("press [1] to see the items and total cost");
-                                xx3 = input.nextInt();
-
-                                if (xx3 == 1) {
-
-                                    if (x2 >= 0 && x1 >=0 && x3 >= 0 && x4 >=0 && x5 >= 0){
+                                
                                     cc = (x1p + x2p + x3p + x4p + x5p);
+                                    System.out.println("_________________________________");
                                     System.out.println("amount of kisses bought:" + x1);
                                     System.out.println("amount of m&m's bought:" + x2);
                                     System.out.println("amount of iCool bought:" + x3);
                                     System.out.println("amount of dynamite bought:" + x4);
                                     System.out.println("amount of barnuts bought:" + x5);
+                                    System.out.println("_________________________________");
                                     System.out.println("total cost is " + cc);
-                                    System.out.println("input [next] to proceed");
-                                    y = input.nextLine();
+                                    System.out.println("would you like to buy?");
+                                   System.out.println("input [1] for yes or [2] for no");
+                                    System.out.println("_________________________________");
+                                    xx3 = input.nextInt();
+                                
+                            
+
+                                if (x5 >= 5 && x1 >= 10) {
+                                    cc1 = (x1p + x2p + x3p + x4p + x5p - 50 );
+                                    System.out.println("_________________________________");
+                                    System.out.println("Discount ##1 and ##2 detected, total cost deducted by 50");
+                                    System.out.println("total cost is " + cc1);
+                                    System.out.println("input [1] for yes or [2] for no");
+                                    System.out.println("_________________________________");
+                                    xx3 = input.nextInt();
+
+                                } else if (x1 >= 10) {
+                                    cc2 = (x1p + x2p + x3p + x4p + x5p - 20 - cc);
+                                    System.out.println("_________________________________");
+                                    System.out.println("Discount ##2 detected, total cost deducted by 20");
+                                    System.out.println("total cost is " + cc2);
+                                   System.out.println("would you like to buy?");
+                                System.out.println("input [1] for yes or [2] for no");
+                                    System.out.println("_________________________________");
+                                    xx3 = input.nextInt();
+
+                                } else if (x5 == 5) {
+                                    cc3 = (x1p + x2p + x3p + x4p + x5p - 30 - cc);
+                                    System.out.println("_________________________________");
+                                    System.out.println("Discount ##2 detected, total cost deducted by 30");
+                                    System.out.println("total cost is " + cc3);
+                                    System.out.println("would you like to buy?");
+                                    System.out.println("input [1] for yes or [2] for no");
+                                    System.out.println("_________________________________");
+                                    xx3 = input.nextInt();
+                                }
+
+                                
                                     
-                                    }
-
-
-                                    if (x2 >= 0 && x1 >=0 && x3 >= 0 && x4 >=0 && x5 >= 5) {
-                                        cc1 = (x1p + x2p + x3p + x4p + x5p - 30);
-                                        System.out.println("Discount ##1 detected, total cost deducted by 30");
-                                        System.out.println("total cost is " + cc1);
-                                        System.out.println("input [next] to proceed");
-                                    y = input.nextLine();
-                                     
-
-                                    } else if (x2 >= 0 && x1 >=10 && x3 >= 0 && x4 >=0 && x5 >= 0 ) {
-                                        cc2 = (x1p + x2p + x3p + x4p + x5p - 20);
-                                        System.out.println("Discount ##2 detected, total cost deducted by 20");
-                                        System.out.println("total cost is " + cc2);
-                                        System.out.println("input [next] to proceed");
-                                    y = input.nextLine();
+                                    while (xx3 == 1) {
+                                    System.out.println("_________________________________");
+                                    System.out.println("Please input your cash");
+                                    System.out.println("_________________________________");
+                                    p = input.nextInt();
+                                    p1 = (p - cc1 - cc2 - cc3 - cc);
+                                    if (p1 < 0) {
+                                        System.out.println("_________________________________");
+                                        System.out.println("total amount of change: " + p1);
+                                        System.out.println("cash amount is insufficient");
+                                        System.out.println("please input [1] to restart");
+                                        System.out.println("_________________________________");
+                                      xx2 = input.nextInt();
                                         
-
-                                    } 
-                                    if (y.equals ("next")) {
-                                        System.out.println("Please input your cash");
-                                        p = input.nextInt();
-                                        p1 = (p - cc1);
-                                        if (p1 < 0) {
-                                            System.out.println("total amount of change: " + p1);
-                                            System.out.println("cash amount is insufficient");
-                                            System.out.println("press 1 to return");
-                                            xx1 = input.nextInt();
-                                            break;
-                                        }
-                                        if (p1 >= 0) {
-                                            System.out.println("total amount of change: " + p1);
-                                            System.out.println("cash is sufficient");
-                                            System.out.println("items bought");
-                                            System.out.println("press 1 to return to store");
-                                            System.out.println("press 2 to stop shopping");
-                                            xx1 = input.nextInt();
-                                            break;
-                                        }
-
+                                        
+                                                
+                                        break;
+                                        
+                                    } else if (p1 >= 0) {
+                                        System.out.println("_________________________________");
+                                        System.out.println("total amount of change: " + p1);
+                                        System.out.println("cash is sufficient");
+                                        System.out.println("items bought");
+                                        System.out.println("thank you for buying from the good ol kuroshop");
+                                        System.out.println("please input [1] to return to the shop");
+                                        System.out.println("_________________________________");
+                                        xx2 = input.nextInt();
+                                        break;
+                                    }
+                                    }
                                     }
                                 }
-                        }
-                    }
-                }
-            } while (xx2 == 1);
+                            }
+                    
+                
+            
+        } while (xx2 == 1);
 
-        }
-
-    }
+    } 
 }
